@@ -4,7 +4,7 @@ import axios from "axios";
 
 export default function TodoList(props) {
     const api = axios.create({
-        baseURL:`http://localhost:4000`
+        baseURL:`https://todo-app-pacis-backend.web.app`
     })
     const [todos,setTodos] = useState([])
     useEffect(()=>{
