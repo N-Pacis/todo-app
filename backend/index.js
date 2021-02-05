@@ -5,7 +5,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 
 app.use((req, res, next)=>{
-  res.header('Access-Control-Allow-Origin', "https://todo-app-pacis.web.app/");
+  res.header('Access-Control-Allow-Origin', "https://todo-app-pacis.web.app");
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE');
   res.header('Access-Control-Allow-Headers',  'Content-Type');
    next();
