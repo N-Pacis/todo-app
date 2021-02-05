@@ -18,7 +18,7 @@ app.use(require("./routes/createTodo"))
 
 mongoose.connect("mongodb://localhost/mern-crud",{useNewUrlParser:true,useUnifiedTopology:true,useFindAndModify:true})
   .then(()=>{console.log("Connected to mongodb successfully...")})
-  .catch(err=>{console.log("Failed to connect due to ",err)})
+  .catch(err=>{console.log("Failed to connect to mongodb due to ",err)})
 
 const port = process.env.PORT || 4000
 
